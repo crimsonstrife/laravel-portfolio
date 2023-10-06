@@ -234,13 +234,13 @@ admin.ajax = {
                     // }
                     // Modify the above to account for data: and vbscript: substrings as well along with the javascript: substring @crimsonstrife
                     if (
-                        url.charAt(0) !== "#" &&
-                        url.substring(0, 11) !== "javascript:" &&
-                        url.substring(0, 11) !== "data:" &&
-                        url.substring(0, 11) !== "vbscript:" &&
-                        url !== "" &&
-                        !a.classList.contains("no-ajax") &&
-                        a.getAttribute("target") !== "_blank"
+                        (url.charAt(0) !== "#" &&
+                            url.substring(0, 11) !== "javascript:") ||
+                        url.substring(0, 5) !== "data:" ||
+                        (url.substring(0, 9) !== "vbscript:" &&
+                            url !== "" &&
+                            !a.classList.contains("no-ajax") &&
+                            a.getAttribute("target") !== "_blank")
                     ) {
                         preventPopState = false;
                         admin.ajax.navigate(url, preventPopState);
