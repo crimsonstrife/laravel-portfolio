@@ -1,5 +1,5 @@
 <?php
-
+// file deepcode ignore HardcodedPassword: <translation only>
 return [
     'online'                => '온라인',
     'login'                 => '로그인',

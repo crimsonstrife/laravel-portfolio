@@ -1,5 +1,5 @@
 <?php
-
+// file deepcode ignore HardcodedPassword: <translation only>
 return [
     'online'                => 'В мережі',
     'login'                 => 'Увійти',
@@ -96,7 +96,7 @@ return [
         'text_empty'        => 'Пустий список',
         'filtered'          => '{0} / {1}',
         'filter_clear'      => 'Показати все',
-        'filter_placeholder'=> 'Фільтр',
+        'filter_placeholder' => 'Фільтр',
     ],
     'grid_items_selected'    => '{n} елементів вибрано',
 

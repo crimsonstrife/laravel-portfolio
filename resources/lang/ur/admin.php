@@ -1,5 +1,5 @@
 <?php
-
+// file deepcode ignore HardcodedPassword: <translation only>
 return [
     'online'                => 'جڑا ہوا۔',
     'login'                 => 'لاگ ان کریں۔',

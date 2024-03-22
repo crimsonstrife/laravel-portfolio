@@ -234,6 +234,7 @@ return [
         /*
          * Replace input fields that should not be logged
          */
+        // file deepcode ignore HardcodedPassword: <used to prevent logging>
         'filter_input' => [
             'token'             => '*****-filtered-out-*****',
             'password'          => '*****-filtered-out-*****',
