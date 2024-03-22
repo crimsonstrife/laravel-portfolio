@@ -39,9 +39,13 @@ admin.resource = {
                     });
                 });
             },
-        }).then(function (result) {
-            admin.resource.default_swal_response_and_reload(result);
-        });
+        })
+            .then(function (result) {
+                admin.resource.default_swal_response_and_reload(result);
+            })
+            .catch(function (error) {
+                console.error(error);
+            });
     },
 
     batch_edit: function (resource_url) {
