@@ -18,5 +18,9 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
+
+        //Use the UserSeeder to create users
+        $this->command->info('Creating users...');
+        $this->call(UserSeeder::class);
     }
 }
