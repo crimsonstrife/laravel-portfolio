@@ -42,7 +42,9 @@
         }
     },
     "autoload-dev": {
-        "psr-4": {}
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
     },
     "scripts": {
         "pre-update-cmd": [
